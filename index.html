@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="applestyle.css">
+</head>
+<body>
+    <P class="display-result"></P>
+    <p>
+        <button onclick="op('1');" class="calci-button"
+        
+        
+        >1</button>
+        <button onclick="op('2');" class="calci-button"
+        
+        
+        >2</button>
+        <button onclick="op('3');"
+        class="calci-button">3</button>
+        <button onclick="op('+');"
+       class="calci-button fruit-orange"
+        
+        >+</button>
+    </p>
+    <p>
+        <button onclick="op('4');"
+        class="calci-button">4</button>
+        <button onclick="op('5');"
+        class="calci-button">5</button>
+        <button onclick="op('6');"
+        class="calci-button">6</button>
+        <button onclick="op('-');"
+        class="calci-button fruit-orange">-</button>
+    </p>
+    <p>
+        <button onclick="op('7');"
+        class="calci-button">7</button>
+        <button onclick="op('8');"
+        class="calci-button">8</button>
+        <button onclick="op('9');"
+        class="calci-button">9</button>
+        <button onclick="op('*');"
+        class="calci-button fruit-orange">*</button>
+    </p>
+    <p>
+        <button onclick="op('0');"
+        class="calci-button">0</button>
+        <button onclick="op('.');"
+        class="calci-button">.</button>
+        <button onclick="
+        calculation = eval(calculation);
+        display();
+        localStorage.setItem('calci',calculation);
+        "
+        class="calci-button"
+        >=</button>
+        <button onclick="op('/');"
+        class="calci-button fruit-orange">/</button>
+    </p>
+    <p>
+        <button onclick="calculation = '';
+        display();
+        localStorage.setItem('calci',calculation);
+        "
+        class="clear-button">Clear</button>
+    </p>
+    <script>
+                    let calculation = localStorage.getItem('calci') || '';
+            display();
+            function op(value){
+                calculation = calculation + value;
+                display();
+                localStorage.setItem('calci',calculation);
+            }
+            function display(){
+                document.querySelector('.display-result')
+                .innerHTML = calculation;
+            }
+
+    </script>
+            <button class="name" onclick="image();">
+            <i>Manohar...</i>
+
+            </button>
+            <img src="apple1.png" title="applelogo" class="image">
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(0,0,0);
+}
+.display-result{
+    color: white;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.calci-button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 26px;
+    margin-right: 5px;
+    
+}
+.fruit-orange{
+    color: white;
+    background-color: rgb(254, 160, 10);
+}
+.clear-button{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+}
+.name{
+    margin: 80px;
+    color: white;
+    font-weight: bold;
+    font-size:xx-large;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+
+}
+.image{
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 120px;
+    width: 250px;
+}
